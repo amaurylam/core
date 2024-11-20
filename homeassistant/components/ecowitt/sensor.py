@@ -78,9 +78,21 @@ ECOWITT_SENSORS_MAPPING: Final = {
         native_unit_of_measurement=UV_INDEX,
         state_class=SensorStateClass.MEASUREMENT,
     ),
+    EcoWittSensorTypes.PM1: SensorEntityDescription(
+        key="PM1",
+        device_class=SensorDeviceClass.PM1,
+        native_unit_of_measurement=CONCENTRATION_MICROGRAMS_PER_CUBIC_METER,
+        state_class=SensorStateClass.MEASUREMENT,
+    ),
     EcoWittSensorTypes.PM25: SensorEntityDescription(
         key="PM25",
         device_class=SensorDeviceClass.PM25,
+        native_unit_of_measurement=CONCENTRATION_MICROGRAMS_PER_CUBIC_METER,
+        state_class=SensorStateClass.MEASUREMENT,
+    ),
+    EcoWittSensorTypes.PM4: SensorEntityDescription(
+        key="PM4",
+        device_class=SensorDeviceClass.PM4,
         native_unit_of_measurement=CONCENTRATION_MICROGRAMS_PER_CUBIC_METER,
         state_class=SensorStateClass.MEASUREMENT,
     ),
